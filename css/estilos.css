@@ -16,64 +16,13 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: white;
+  padding-top: 140px;
 }
 
 a {
   cursor: pointer;
   color: black;
   text-decoration: none;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 140px;
-  z-index: 1;
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 2px solid #308e984a;
-}
-
-.header-main-logo {
-  width: fit-content;
-  height: 100%;
-  padding-left: 60px;
-}
-
-.header-main-logo img {
-  height: 140px;
-}
-
-.header-main-nav {
-  width: fit-content;
-  height: 100%;
-}
-
-.header-main-nav ul {
-  list-style: none;
-  margin-right: 30px;
-}
-
-.header-main-nav ul li {
-  display: inline;
-  float: left;
-}
-
-.header-main-nav ul li a {
-  padding: 0 35px;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  line-height: 140px;
-  color: #017480;
-  display: block;
-  height: 100%;
-  transition: all 0.2s ease-in-out;
-}
-
-.header-main-nav ul li a:hover {
-  color: rgb(178 178 178);
 }
 
 #bienvenido {
@@ -228,27 +177,68 @@ h1 {
   font-family: "OpenSans", sans-serif;
   margin-bottom: 50px;
 }
-/* Galeria de productos con Grid */
 
-#galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 15px;
-}
+/* Galeria de productos con Grid */
 
 #galeria img {
   max-width: 100%;
   height: auto;
 }
-
+/*MEDIA QUERIES*/
+/*
 @media (max-width: 768px) {
   .container {
     max-width: 600px !important;
   }
 
   #galeria {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 @media (max-width: 1199px) {
+}
+
+/* PRUEBA NAV BOOTSTRAP */
+
+.container-fluid {
+  width: 80%;
+  margin: 0 auto;
+}
+.navbar-expand-lg {
+  box-shadow: 0px 0px 5px #082e32;
+}
+#galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.navbar-brand img {
+  height: 140px;
+}
+
+.ms-auto {
+  text-align: right;
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand img {
+    height: 90px;
+  }
+
+  #galeria {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .container {
+    padding: 45px 20px 80px 20px;
+  }
+}
+
+/*tablet*/
+@media only screen and (min-width: 900px) and (max-width: 1023px) {
+  #galeria {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
 }

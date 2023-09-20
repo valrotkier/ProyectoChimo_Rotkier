@@ -18,12 +18,6 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!-- bootstrap js-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
     <!-- css linkeo -->
     <link rel="stylesheet" href="../css/estilos.css" />
     <!-- fonts awesome icons -->
@@ -34,33 +28,15 @@
   </head>
 
   <body>
-    <!-- inicio nav -->
-    <header id="header-main">
-      <div class="header-main-logo">
-        <a href="../index.html"
-          ><img src="../assets/img/logo.png" alt="logo"
-        /></a>
-      </div>
-      <nav class="header-main-nav">
-        <ul>
-          <li><a href="../pages/actividades.html">Actividades</a></li>
-          <li><a href="../pages/alojamiento.html">Alojamiento</a></li>
-          <li><a href="../pages/galeria.html">Galería</a></li>
-          <li><a href="../pages/ubicacion.html">Ubicación</a></li>
-          <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- fin nav -->
-
     <!--nav 2 prueba-->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <!--probar 'container-fluid', se lo saque -->
+      <!-- cambie el bg-body-tertiary a bg-white para que el fondo sea blanco, tambien fixed-top para que este fijo-->
+      <nav class="navbar navbar-expand-lg fixed-top bg-white">
+        <!-- le agregue justify-content-center -->
         <div class="container-fluid">
           <!-- Logo -->
           <a class="navbar-brand" href="../index.html"
-            ><img src="https://picsum.photos/20?random=1" alt="logo"
+            ><img src="../assets/img/logo.png" alt="logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -73,8 +49,10 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <!-- le agregue flex-grow-0 para que se centre -->
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+            <!-- se puede agregar ms-auto para que se vaya todo a la der -->
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="../pages/actividades.html"
                   >Actividades</a
@@ -113,7 +91,6 @@
         <img src="https://picsum.photos/500?random=6" alt="" />
         <img src="https://picsum.photos/500?random=7" alt="" />
         <img src="https://picsum.photos/500?random=8" alt="" />
-        <img src="https://picsum.photos/500?random=9" alt="" />
       </section>
     </section>
 
@@ -163,5 +140,12 @@
       </div>
     </footer>
     <!-- fin footer -->
+
+    <!-- bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
