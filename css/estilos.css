@@ -254,11 +254,14 @@ i:hover {
 }
 /*fin footer*/
 
-/*mobile*/
+/* ---------- Media queries Mobile ----------*/
 
 @media only screen and (max-width: 768px) {
   body {
     padding-top: 0;
+  }
+  .container {
+    padding: 45px 20px 80px 20px;
   }
   .bg-white {
     background-color: #ff000000;
@@ -272,31 +275,47 @@ i:hover {
     height: 90px;
   }
 
+  .navbar-collapse {
+    padding-bottom: 40px;
+  }
+
   #bienvenido {
     padding: 120px 0 0 0;
+    background-image: url(../assets/img/hero-mobile.jpg);
+    height: 400px;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   #bienvenido > div {
     width: 100%;
+    padding-bottom: 0;
   }
 
   #bienvenido h1 {
     border: none;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 0;
   }
 
   .sobre-nosotros {
     width: 90%;
+    padding-top: 50px;
   }
 
   .sobre-nosotros p {
     font-size: 11px;
   }
 
+  .fotos-index {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
   #galeria {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-  .container {
-    padding: 45px 20px 80px 20px;
   }
 
   .galeria {
@@ -304,7 +323,7 @@ i:hover {
   }
 }
 
-/*tablet*/
+/* ---------- Media queries Tablet ----------*/
 @media only screen and (min-width: 900px) and (max-width: 1023px) {
   #galeria {
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
