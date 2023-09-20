@@ -65,7 +65,7 @@ main p {
 }
 
 .sobre-nosotros {
-  width: 50%;
+  width: 70%;
   text-align: center;
   margin: 0 auto;
   padding-top: 100px;
@@ -211,6 +211,11 @@ h1 {
 .ms-auto {
   text-align: right;
 }
+
+.show-mobile {
+  display: none;
+}
+
 /*footer*/
 .footer {
   background: #082e32;
@@ -301,12 +306,19 @@ i:hover {
   }
 
   .sobre-nosotros {
-    width: 90%;
     padding-top: 50px;
+    width: 90%;
   }
 
   .sobre-nosotros p {
-    font-size: 11px;
+    font-size: 15px;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+  .show-desktop {
+    display: none;
   }
 
   .fotos-index {
