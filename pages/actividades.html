@@ -33,20 +33,48 @@
 
   <body>
     <!-- inicio nav -->
-    <header id="header-main">
-      <div class="header-main-logo">
-        <a href="../index.html"
-          ><img src="../assets/img/logo.png" alt="logo"
-        /></a>
-      </div>
-      <nav class="header-main-nav">
-        <ul>
-          <li><a href="../pages/actividades.html">Actividades</a></li>
-          <li><a href="../pages/alojamiento.html">Alojamiento</a></li>
-          <li><a href="../pages/galeria.html">Galería</a></li>
-          <li><a href="../pages/ubicacion.html">Ubicación</a></li>
-          <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-white">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../assets/img/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/actividades.html"
+                  >Actividades</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/alojamiento.html"
+                  >Alojamiento</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/ubicacion.html">Ubicación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- fin nav -->
@@ -79,46 +107,58 @@
 
     <!-- inicio footer -->
     <footer>
-      <div class="footer-nav">
-        <ul>
-          <li><a href="../pages/actividades.html">> Actividades</a></li>
-          <li><a href="../pages/alojamiento.html">> Alojamiento</a></li>
-          <li><a href="../pages/galeria.html">> Galería</a></li>
-          <li><a href="../pages/ubicacion.html">> Ubicación</a></li>
-          <li><a href="../pages/contacto.html">> Contacto</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-info">
-        <div class="footer-info-text">
-          <i class="fa-solid fa-location-dot fa-2xl"></i>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-        </div>
-        <div class="footer-info-text">
-          <i class="fa-solid fa-phone fa-2xl"></i>
-          <p>2608 33 99</p>
-        </div>
-        <div class="footer-info-text">
-          <i class="fa-solid fa-envelope fa-2xl"></i>
-          <p>chimo@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="social">
-        <div>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="fa-brands fa-square-facebook fa-2xl"></i>
-          </a>
-        </div>
-        <div>
-          <a href="https://www.instagram.com" target="_blank">
-            <i class="fa-brands fa-square-instagram fa-2xl"></i>
-          </a>
-        </div>
-        <div>
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="fa-brands fa-square-twitter fa-2xl"></i>
-          </a>
+      <div class="mt-5 pt-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12 about-company">
+              <h2>Chimo</h2>
+              <p class="pr-5 text-white-50">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                ac ante mollis quam tristique convallis
+              </p>
+              <p>
+                <a href="https://facebook.com" target="_blank"
+                  ><i class="bi bi-facebook"></i></i
+                ></a>
+                <a href="https://instagram.com" target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="https://twitter.com" target="_blank"
+                  ><i class="bi bi-twitter-x"></i
+                ></a>
+              </p>
+            </div>
+  
+            <!-- mid-info-footer-->
+  
+            <div class="col-lg-3 col-xs-12 links">
+              <ul class="m-0 p-0">
+                <li><a href="./pages/actividades.html">Actividades</a></li>
+                <li><a href="./pages/alojamiento.html">Alojamiento</a></li>
+                <li><a href="./pages/galeria.html">Galería</a></li>
+                <li><a href="./pages/ubicacion.html">Ubicación</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+            <!--info-derecha-footer-->
+            <div class="col-lg-4 col-xs-12 location">
+              <p>
+                <i class="bi bi-geo-alt-fill"></i>Lorem ipsum dolor, consectetur
+                adipiscing
+              </p>
+              <p><i class="fa fa-phone mr-3"></i>26083399</p>
+              <p><i class="bi bi-envelope-fill"></i>chimo@gmail.com</p>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col copyright">
+              <p class="">
+                <small class="text-white-50"
+                  >© 2019. All Rights Reserved.</small
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
