@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css linkeo -->
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <!-- fonts awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/70343a0f69.js" crossorigin="anonymous">
+    </script>
+  </head>
+
+  <body>
+    <!-- inicio nav -->
+    <header id="header-main">
+      <div class="header-main-logo">
+        <a href="../index.html"><img src="../assets/img/logo.png" alt="logo" /></a>
+      </div>
+      <nav class="header-main-nav">
+        <ul>
+          <li><a href="../pages/actividades.html">Actividades</a></li>
+          <li><a href="../pages/alojamiento.html">Alojamiento</a></li>
+          <li><a href="../pages/galeria.html">Galería</a></li>
+          <li><a href="../pages/ubicacion.html">Ubicación</a></li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- fin nav -->
+
+    <section>
+      <h2>Contacto</h2>
+      <div class="container">
+        <form action="" method="post" enctype="multipart/form-data">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre.."
+          />
+
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            id="appelido"
+            name="apellido"
+            placeholder="Tu apellido.."
+          />
+
+          <label for="telefono">Telefono:</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="Tu telefono..."
+            required
+          />
+
+          <label for="email">E-mail:</label>
+          <input 
+            type="email" 
+            id="email"
+            name="email"
+            placeholder="Tu e-mail.."
+            required 
+          />
+
+          <label for="comentarios">Comentarios:</label>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            placeholder="Escribe tu comentario aqui.."
+          ></textarea>
+
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Resetear" />
+        </form>
+      </div>
+    </section>
+
+    <!-- inicio footer -->
+    <footer>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="../pages/actividades.html">> Actividades</a></li>
+          <li><a href="../pages/alojamiento.html">> Alojamiento</a></li>
+          <li><a href="../pages/galeria.html">> Galería</a></li>
+          <li><a href="../pages/ubicacion.html">> Ubicación</a></li>
+          <li><a href="../pages/contacto.html">> Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-info">
+        <div class="footer-info-text">
+          <i class="fa-solid fa-location-dot fa-2xl"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+        <div class="footer-info-text">
+          <i class="fa-solid fa-phone fa-2xl"></i>
+          <p>2608 33 99</p>
+        </div>
+        <div class="footer-info-text">
+          <i class="fa-solid fa-envelope fa-2xl"></i>
+          <p>chimo@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="social">
+        <div>
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-square-facebook fa-2xl"></i>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-square-instagram fa-2xl"></i>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.twitter.com" target="_blank">
+            <i class="fa-brands fa-square-twitter fa-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- fin footer -->
+  </body>
+</html>
