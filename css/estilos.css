@@ -244,6 +244,9 @@ i {
   color: rgba(255, 255, 255, 0.5);
   padding-right: 20px;
 }
+.texto-footer {
+  padding-bottom: 30px;
+}
 
 .texto-footer i:hover {
   color: #017480;
@@ -251,7 +254,7 @@ i {
 }
 
 .links {
-  padding-bottom: 50px;
+  padding: 10px 0 50px 0;
 }
 
 .copyright p {
@@ -324,6 +327,16 @@ i {
   .fotos-index {
     margin-bottom: 0;
     padding: 0;
+  }
+  .links,
+  .texto-footer,
+  .location,
+  .copyright {
+    text-align: center;
+  }
+
+  .location i {
+    padding-right: 10px;
   }
 
   #galeria {
