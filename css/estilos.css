@@ -245,7 +245,7 @@ i {
   padding-right: 20px;
 }
 
-i:hover {
+.texto-footer i:hover {
   color: #017480;
   transition: all 0.2s ease-in-out;
 }
