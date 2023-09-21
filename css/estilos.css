@@ -36,7 +36,7 @@ a {
   background-image: url(../assets/img/hero.jpg);
   width: 100%;
   height: 800px;
-  padding: 120px;
+  padding: 120px 120px 0 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,20 +54,16 @@ a {
 
 .bienvenido-text {
   width: 40%;
-  padding: 200px 0 0 420px;
+  padding: 100px 0;
 }
 
 main p {
   font-size: 18px;
   line-height: 27px;
   color: #fff;
-  padding: 30px 0;
 }
 
 .sobre-nosotros {
-  width: 70%;
-  text-align: center;
-  margin: 0 auto;
   padding-top: 100px;
   color: rgb(51, 51, 51);
   font-family: "OpenSans", sans-serif;
@@ -163,10 +159,6 @@ footer ul li a:hover,
   color: white;
 } */
 
-.container {
-  padding: 100px 0 100px 0;
-}
-
 #bienvenido > div {
   margin-left: 0;
 }
@@ -189,7 +181,15 @@ h1 {
   height: auto;
 }
 
-/* PRUEBA NAV BOOTSTRAP */
+#galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+.galeria {
+  padding-top: 100px;
+}
+/* NAV BOOTSTRAP */
 
 .container-fluid {
   width: 80%;
@@ -197,11 +197,6 @@ h1 {
 }
 .navbar-expand-lg {
   box-shadow: 0px 0px 5px #082e32;
-}
-#galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 15px;
 }
 
 .navbar-brand img {
@@ -319,6 +314,7 @@ i {
 
   .show-mobile {
     display: block;
+    text-align: center;
   }
   .show-desktop {
     display: none;
@@ -333,6 +329,7 @@ i {
   .location,
   .copyright {
     text-align: center;
+    padding-bottom: 10px;
   }
 
   .location i {
@@ -342,15 +339,41 @@ i {
   #galeria {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
-
   .galeria {
     padding-top: 170px;
   }
 }
 
 /* ---------- Media queries Tablet ----------*/
-@media only screen and (min-width: 900px) and (max-width: 1199px) {
-  #galeria {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    background-color: red;
+  }
+
+  .links,
+  .texto-footer,
+  .location,
+  .copyright {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  #bienvenido {
+    background-image: url(../assets/img/hero.jpg);
+    padding: 0;
+    height: auto;
+  }
+
+  .bienvenido-text {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #bienvenido h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  #bienvenido > div {
+    margin-left: 100px;
   }
 }
