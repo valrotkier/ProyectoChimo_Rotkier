@@ -336,8 +336,8 @@ i {
 }
 
 /* ---------- Media queries Tablet ----------*/
-@media only screen and (min-width: 900px) and (max-width: 1023px) {
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
   #galeria {
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
