@@ -324,6 +324,7 @@ i {
     margin-bottom: 0;
     padding: 0;
   }
+
   .links,
   .texto-footer,
   .location,
@@ -346,10 +347,6 @@ i {
 
 /* ---------- Media queries Tablet ----------*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .footer {
-    background-color: red;
-  }
-
   .links,
   .texto-footer,
   .location,
