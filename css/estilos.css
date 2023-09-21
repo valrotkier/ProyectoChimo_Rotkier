@@ -95,70 +95,6 @@ img {
   margin-bottom: 100px;
 }
 
-/* Footer */
-/* footer {
-  width: 100%;
-  background-color: #082e32;
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 100px 0px 100px 0px;
-}
-
-
-footer ul {
-  list-style-type: none;
-}
-footer ul li {
-  padding: 10px 0 10px 0;
-}
-footer ul li a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
-}
-
-footer ul li a:hover,
-.social i:hover {
-  opacity: 0.5;
-}
-
-
-
-.footer-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.footer-info-text {
-  display: flex;
-  align-items: center;
-}
-.fa-solid {
-  color: white;
-  width: 40px;
-  height: 40px;
-  vertical-align: middle;
-  padding-right: 15px;
-}
-.fa-2xl {
-  line-height: normal !important;
-}
-
-
-.social {
-  padding: 10px 0 10px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.social i {
-  transition: all 0.2s ease-in-out;
-  color: white;
-} */
-
 #bienvenido > div {
   margin-left: 0;
 }
@@ -189,7 +125,7 @@ h1 {
 .galeria {
   padding-top: 100px;
 }
-/* NAV BOOTSTRAP */
+/* Nav Bootstrap */
 
 .container-fluid {
   width: 80%;
@@ -211,7 +147,7 @@ h1 {
   display: none;
 }
 
-/*footer*/
+/* Footer */
 .footer {
   background: #082e32;
   color: rgba(255, 255, 255, 0.5);
@@ -255,7 +191,7 @@ i {
 .copyright p {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-/*fin footer*/
+/* Fin Footer */
 
 /* ---------- Media queries Mobile ----------*/
 
@@ -353,6 +289,9 @@ i {
   .copyright {
     text-align: center;
     padding-bottom: 10px;
+  }
+  #galeria {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   #bienvenido {
