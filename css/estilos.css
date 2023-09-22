@@ -190,8 +190,39 @@ i {
 
 .copyright p {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
 }
 /* Fin Footer */
+
+/* ---------- Media queries Tablet ----------*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .links,
+  .texto-footer,
+  .location,
+  .copyright {
+    text-align: center;
+    padding: 10px;
+  }
+  #bienvenido {
+    padding: 0;
+    height: auto;
+    background-position: center;
+  }
+
+  .bienvenido-text {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+  }
+
+  #bienvenido h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  #bienvenido > div {
+    margin-left: 100px;
+  }
+}
 
 /* ---------- Media queries Mobile ----------*/
 
@@ -282,34 +313,5 @@ i {
   }
   .galeria {
     padding-top: 170px;
-  }
-}
-
-/* ---------- Media queries Tablet ----------*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .links,
-  .texto-footer,
-  .location,
-  .copyright {
-    text-align: center;
-    padding: 10px;
-  }
-  #bienvenido {
-    padding: 0;
-    height: auto;
-  }
-
-  .bienvenido-text {
-    width: 100%;
-    margin: 0 auto;
-    padding: 70px 0;
-  }
-
-  #bienvenido h1 {
-    font-size: 30px;
-    margin: 0;
-  }
-  #bienvenido > div {
-    margin-left: 100px;
   }
 }
