@@ -266,15 +266,19 @@ i {
   .location,
   .copyright {
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px;
+  }
+
+  .links {
+    border-top: 1px solid rgb(255 255 255 / 12%);
+    border-bottom: 1px double rgb(255 255 255 / 12%);
   }
 
   .location i {
     padding-right: 10px;
   }
-
   #galeria {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
   }
   .galeria {
     padding-top: 170px;
@@ -288,14 +292,9 @@ i {
   .location,
   .copyright {
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px;
   }
-  #galeria {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
   #bienvenido {
-    background-image: url(../assets/img/hero.jpg);
     padding: 0;
     height: auto;
   }
@@ -303,6 +302,7 @@ i {
   .bienvenido-text {
     width: 100%;
     margin: 0 auto;
+    padding: 70px 0;
   }
 
   #bienvenido h1 {
