@@ -175,7 +175,7 @@ h1 {
 
 /* line 149, ../PreEntrega3_Rotkier/sass/estilos.scss */
 .titulos {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 /* Formulario */
@@ -309,19 +309,19 @@ i {
   .bg-white {
     background-color: #ff000000;
   }
-  /* line 262, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 261, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .navbar-toggler-icon {
     color: white;
   }
-  /* line 266, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 265, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .navbar-brand img {
     height: 90px;
   }
-  /* line 270, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 269, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .navbar-collapse {
     padding-bottom: 40px;
   }
-  /* line 274, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 273, ../PreEntrega3_Rotkier/sass/estilos.scss */
   #bienvenido {
     padding: 120px 0 0 0;
     background-image: url(../assets/img/hero-mobile.jpg);
@@ -330,22 +330,23 @@ i {
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  /* line 283, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 282, ../PreEntrega3_Rotkier/sass/estilos.scss */
   #bienvenido > div {
     width: 100%;
     padding-bottom: 0;
   }
-  /* line 288, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 287, ../PreEntrega3_Rotkier/sass/estilos.scss */
   #bienvenido h1 {
     border: none;
     font-size: 35px;
     line-height: 40px;
     margin-bottom: 0;
   }
-  /* line 295, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 294, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .sobre-nosotros {
     padding-top: 50px;
     width: 90%;
+    margin-top: 0;
   }
   /* line 300, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .sobre-nosotros p {
