@@ -64,7 +64,6 @@ main p {
 }
 
 .sobre-nosotros {
-  padding-top: 100px;
   color: rgb(51, 51, 51);
   font-family: "OpenSans", sans-serif;
 }
@@ -146,6 +145,29 @@ h1 {
 .show-mobile {
   display: none;
 }
+
+.titulos {
+  margin-top: 100px;
+}
+/* Formulario */
+.my-form {
+  color: #082e32;
+
+  .btn-default {
+    background-color: #305896;
+    color: #fff;
+    border-radius: 0;
+
+    &:hover {
+      background-color: #4498c6;
+      color: #fff;
+    }
+  }
+  .form-control {
+    border-radius: 0;
+  }
+}
+/* Fin Formulario */
 
 /* Footer */
 .footer {

@@ -44,9 +44,6 @@
               <a class="nav-link" href="../pages/galeria.html">Galería</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/ubicacion.html">Ubicación</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="../pages/contacto.html">Contacto</a>
             </li>
           </ul>
@@ -56,30 +53,66 @@
   </header>
   <!-- fin nav -->
 
-  <section>
-    <h2>Contacto</h2>
-    <div class="container">
-      <form action="" method="post" enctype="multipart/form-data">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre.." />
+  <!-- Mapa y form -->
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="appelido" name="apellido" placeholder="Tu apellido.." />
-
-        <label for="telefono">Telefono:</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="Tu telefono..." required />
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="Tu e-mail.." required />
-
-        <label for="comentarios">Comentarios:</label>
-        <textarea id="comentarios" name="comentarios" placeholder="Escribe tu comentario aqui.."></textarea>
-
-        <input type="submit" value="Enviar" />
-        <input type="reset" value="Resetear" />
-      </form>
+  <div class="container">
+    <div class="titulos">
+      <h1>Contacto</h1>
     </div>
-  </section>
+    <br />
+    <div class="row">
+      <!-- Mapa -->
+      <div class="col-md-6">
+        <div id="googlemap" style="width:100%; height:350px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13220.618402563636!2d-57.36639219306082!3d-34.065550918636674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a38c3bce3a25e5%3A0x1f1881675c61a4bf!2s70200%20Colla%2C%20Colonia%20Department!5e0!3m2!1sen!2suy!4v1693092600472!5m2!1sen!2suy"
+            width="100%" height="350" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <!-- Fin Mapa -->
+      <br />
+
+
+
+      <!-- Form -->
+      <div class="col-md-6">
+        <form action="" method="post" enctype="multipart/form-data" class="my-form">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre.." />
+          </div>
+
+          <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" id="appelido" name="apellido" placeholder="Tu apellido.." />
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Telefono:</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Tu telefono..."
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Tu e-mail.." required />
+          </div>
+
+          <div class="form-group">
+            <label for="comentarios">Comentarios:</label>
+            <textarea class="form-control" id="comentarios" name="comentarios"
+              placeholder="Escribe tu comentario aqui.."></textarea>
+          </div>
+
+          <input class="btn btn-secondary" type="submit" value="Enviar" />
+          <input class="btn btn-secondary" type="reset" value="Resetear" />
+        </form>
+      </div>
+      <!-- Fin Form -->
+    </div>
+  </div>
 
   <!--Footer-->
   <footer>
@@ -104,7 +137,6 @@
               <li><a href="../pages/actividades.html">Actividades</a></li>
               <li><a href="../pages/alojamiento.html">Alojamiento</a></li>
               <li><a href="../pages/galeria.html">Galería</a></li>
-              <li><a href="../pages/ubicacion.html">Ubicación</a></li>
               <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
           </div>
