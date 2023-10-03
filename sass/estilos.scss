@@ -28,10 +28,12 @@ a {
 #navbarNav ul li a {
   color: #017480;
   transition: all 0.2s ease-in-out;
+  padding-left: 2rem;
+  &:hover {
+    color: rgb(174, 180, 182);
+  }
 }
-#navbarNav ul li a:hover {
-  color: rgb(174, 180, 182);
-}
+
 #bienvenido {
   background-image: url(../assets/img/hero.jpg);
   width: 100%;
@@ -41,46 +43,44 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
 
-#bienvenido h1 {
-  font-size: 55px;
-  line-height: 70px;
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-  border: none;
+  h1 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+  }
 }
 
 .bienvenido-text {
   width: 40%;
   padding: 100px 0;
-}
-
-main p {
-  font-size: 18px;
-  line-height: 27px;
-  color: #fff;
+  p {
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .sobre-nosotros {
   color: rgb(51, 51, 51);
   font-family: "OpenSans", sans-serif;
-}
 
-.sobre-nosotros h2 {
-  border-top: 2px solid #0c7a85;
-  padding-top: 30px;
-  width: fit-content;
-  margin: 0 auto;
-  color: #0c7a85;
-  text-transform: uppercase;
-}
-
-.sobre-nosotros p {
-  font-size: 18px;
-  line-height: 27px;
-  padding: 30px 0;
+  h2 {
+    border-top: 2px solid #0c7a85;
+    padding-top: 30px;
+    width: fit-content;
+    margin: 0 auto;
+    color: #0c7a85;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 30px 0;
+  }
 }
 
 img {
@@ -111,15 +111,15 @@ h1 {
 
 /* Galeria de productos con Grid */
 
-#galeria img {
-  max-width: 100%;
-  height: auto;
-}
-
 #galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 .galeria {
   padding-top: 100px;
@@ -173,23 +173,22 @@ h1 {
 .footer {
   background: #082e32;
   color: rgba(255, 255, 255, 0.5);
+  ul {
+    list-style-type: none;
+  }
 }
 
-.footer ul {
-  list-style-type: none;
-}
+.links {
+  padding: 10px 0 50px 0;
 
-.links > ul > li > a {
-  color: rgba(255, 255, 255, 0.5);
-  transition: color 0.2s;
-}
-.links > ul > li > a:hover {
-  color: #017480;
-  transition: all 0.2s ease-in-out;
-}
-
-ul li:before {
-  display: none;
+  ul > li > a {
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.2s;
+    &:hover {
+      color: #017480;
+      transition: all 0.2s ease-in-out;
+    }
+  }
 }
 
 i {
@@ -197,19 +196,15 @@ i {
   color: rgba(255, 255, 255, 0.5);
   padding-right: 20px;
 }
+
 .texto-footer {
   padding-bottom: 30px;
-}
 
-.texto-footer i:hover {
-  color: #017480;
-  transition: all 0.2s ease-in-out;
+  i:hover {
+    color: #017480;
+    transition: all 0.2s ease-in-out;
+  }
 }
-
-.links {
-  padding: 10px 0 50px 0;
-}
-
 .copyright p {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 10px;
@@ -229,20 +224,18 @@ i {
     padding: 0;
     height: auto;
     background-position: center;
+    h1 {
+      font-size: 30px;
+      margin: 0;
+    }
+    div {
+      margin-left: 100px;
+    }
   }
-
   .bienvenido-text {
     width: 100%;
     margin: 0 auto;
     padding: 70px 0;
-  }
-
-  #bienvenido h1 {
-    font-size: 30px;
-    margin: 0;
-  }
-  #bienvenido > div {
-    margin-left: 100px;
   }
 }
 
@@ -252,9 +245,9 @@ i {
   body {
     padding-top: 0;
   }
-  .container {
-    padding: 45px 20px 80px 20px;
-  }
+  // .container {
+  //   padding: 45px 20px 80px 20px;
+  // }
   .bg-white {
     background-color: #ff000000;
   }
@@ -277,28 +270,27 @@ i {
     background-position: inherit;
     background-repeat: no-repeat;
     background-size: 100%;
-  }
 
-  #bienvenido > div {
-    width: 100%;
-    padding-bottom: 0;
-  }
+    div {
+      width: 100%;
+      padding-bottom: 0;
+    }
 
-  #bienvenido h1 {
-    border: none;
-    font-size: 35px;
-    line-height: 40px;
-    margin-bottom: 0;
+    h1 {
+      border: none;
+      font-size: 35px;
+      line-height: 40px;
+      margin-bottom: 0;
+    }
   }
 
   .sobre-nosotros {
     padding-top: 50px;
     width: 90%;
     margin-top: 0;
-  }
-
-  .sobre-nosotros p {
-    font-size: 15px;
+    p {
+      font-size: 15px;
+    }
   }
 
   .show-mobile {
