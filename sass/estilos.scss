@@ -1,3 +1,5 @@
+$font-principal: "Roboto", sans-serif;
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +16,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-principal;
   background-color: white;
   padding-top: 140px;
 }
@@ -64,14 +66,20 @@ a {
   }
 }
 
+.linea {
+  width: 100px;
+  height: 1px;
+  margin: 0 auto;
+  border-bottom: 2px solid #0c7a85;
+}
 .sobre-nosotros {
   color: rgb(51, 51, 51);
   font-family: "OpenSans", sans-serif;
 
   h2 {
-    border-top: 2px solid #0c7a85;
+    // border-top: 2px solid #0c7a85;
     padding-top: 30px;
-    width: fit-content;
+    text-align: center;
     margin: 0 auto;
     color: #0c7a85;
     text-transform: uppercase;
@@ -90,7 +98,6 @@ img {
 
 .fotos-index {
   margin: 0 auto;
-  width: fit-content;
   margin-bottom: 100px;
 }
 
@@ -99,7 +106,7 @@ img {
 }
 
 h1 {
-  border-top: 2px solid #0c7a85;
+  // border-top: 2px solid #0c7a85;
   padding-top: 15px;
   width: fit-content;
   margin: 0 auto;
@@ -168,6 +175,10 @@ h1 {
   }
 }
 /* Fin Formulario */
+
+.info-alojamiento {
+  background-color: #e1e1e1;
+}
 
 /* Footer */
 .footer {
@@ -316,16 +327,21 @@ i {
   }
 
   .links {
-    border-top: 1px solid rgba(255, 255, 255, 0.149);
-    border-bottom: 1px double rgba(255, 255, 255, 0.115);
+    margin: 0 auto;
+    width: 90%;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   }
 
   .location i {
     padding-right: 10px;
   }
+  /* Por si quiero 2 columnas en la Galeria en mobile */
+  /* 
   #galeria {
     grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
-  }
+   }
+  */
   .galeria {
     padding-top: 170px;
   }
