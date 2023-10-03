@@ -34,6 +34,11 @@ a {
   }
 }
 
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
 #bienvenido {
   background-image: url(../assets/img/hero.jpg);
   width: 100%;
