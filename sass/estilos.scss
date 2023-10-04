@@ -1,6 +1,7 @@
 $font-principal: "Roboto", sans-serif;
 $color-principal: #017480;
 $color-secundario: #082e32;
+$fondo-gris-clarito: #e1e1e1;
 
 * {
   margin: 0;
@@ -168,13 +169,17 @@ h1 {
 /* Fin Formulario */
 
 .info-alojamiento {
-  background-color: #e1e1e1;
+  background-color: $fondo-gris-clarito;
+  h3,
+  h4 {
+    color: $color-principal;
+  }
 }
 
 .mas-info {
   transition: all 0.2s ease-in-out;
   &:hover {
-    background-color: #e1e1e1;
+    background-color: $fondo-gris-clarito;
   }
 }
 
@@ -247,27 +252,6 @@ i {
 
   .navbar-collapse {
     padding-bottom: 40px;
-  }
-
-  #bienvenido {
-    padding: 120px 0 0 0;
-    // background-image: url(../assets/img/hero-mobile.jpg);
-    height: 400px;
-    background-position: inherit;
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    div {
-      width: 100%;
-      padding-bottom: 0;
-    }
-
-    h1 {
-      border: none;
-      font-size: 35px;
-      line-height: 40px;
-      margin-bottom: 0;
-    }
   }
 
   .sobre-nosotros {
