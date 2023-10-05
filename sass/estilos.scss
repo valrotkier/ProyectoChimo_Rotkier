@@ -205,6 +205,15 @@ h1 {
   }
 }
 
+.location a {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s;
+  &:hover {
+    color: $color-principal;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
 i {
   font-size: 25px;
   color: rgba(255, 255, 255, 0.5);
