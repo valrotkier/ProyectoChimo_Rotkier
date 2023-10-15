@@ -177,7 +177,7 @@ h1 {
     border-bottom: 1px solid #01748069;
   }
   &::placeholder {
-    opacity: 0.5;
+    opacity: 0.8;
   }
 }
 label {
@@ -200,8 +200,8 @@ textarea:focus::placeholder {
 
 .info-alojamiento {
   background-color: $fondo-gris-clarito;
-  h3,
-  h4 {
+  h2,
+  h3 {
     color: $color-principal;
   }
 }
@@ -229,12 +229,16 @@ textarea:focus::placeholder {
 .links {
   padding: 10px 0 50px 0;
 
-  ul > li > a {
-    color: rgba(255, 255, 255, 0.5);
-    transition: color 0.2s;
-    &:hover {
-      color: $color-principal;
-      transition: all 0.2s ease-in-out;
+  ul > li {
+    padding-bottom: 10px;
+
+    > a {
+      color: rgba(255, 255, 255, 0.5);
+      transition: color 0.2s;
+      &:hover {
+        color: $color-principal;
+        transition: all 0.2s ease-in-out;
+      }
     }
   }
 }

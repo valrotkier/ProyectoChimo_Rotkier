@@ -214,7 +214,7 @@ h1 {
 
 /* line 179, ../PreEntrega3_Rotkier/sass/estilos.scss */
 .form-control::placeholder {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 /* line 183, ../PreEntrega3_Rotkier/sass/estilos.scss */
@@ -246,8 +246,8 @@ textarea:focus::placeholder {
 }
 
 /* line 203, ../PreEntrega3_Rotkier/sass/estilos.scss */
-.info-alojamiento h3,
-.info-alojamiento h4 {
+.info-alojamiento h2,
+.info-alojamiento h3 {
   color: #017480;
 }
 
@@ -284,48 +284,53 @@ textarea:focus::placeholder {
 }
 
 /* line 232, ../PreEntrega3_Rotkier/sass/estilos.scss */
+.links ul > li {
+  padding-bottom: 10px;
+}
+
+/* line 235, ../PreEntrega3_Rotkier/sass/estilos.scss */
 .links ul > li > a {
   color: rgba(255, 255, 255, 0.5);
   transition: color 0.2s;
 }
 
-/* line 235, ../PreEntrega3_Rotkier/sass/estilos.scss */
+/* line 238, ../PreEntrega3_Rotkier/sass/estilos.scss */
 .links ul > li > a:hover {
   color: #017480;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 242, ../PreEntrega3_Rotkier/sass/estilos.scss */
+/* line 246, ../PreEntrega3_Rotkier/sass/estilos.scss */
 .location a {
   color: rgba(255, 255, 255, 0.5);
   transition: color 0.2s;
 }
 
-/* line 245, ../PreEntrega3_Rotkier/sass/estilos.scss */
+/* line 249, ../PreEntrega3_Rotkier/sass/estilos.scss */
 .location a:hover {
   color: #017480;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 251, ../PreEntrega3_Rotkier/sass/estilos.scss */
+/* line 255, ../PreEntrega3_Rotkier/sass/estilos.scss */
 i {
   font-size: 25px;
   color: rgba(255, 255, 255, 0.5);
   padding-right: 20px;
 }
 
-/* line 257, ../PreEntrega3_Rotkier/sass/estilos.scss */
+/* line 261, ../PreEntrega3_Rotkier/sass/estilos.scss */
 .texto-footer {
   padding-bottom: 30px;
 }
 
-/* line 260, ../PreEntrega3_Rotkier/sass/estilos.scss */
+/* line 264, ../PreEntrega3_Rotkier/sass/estilos.scss */
 .texto-footer i:hover {
   color: #017480;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 265, ../PreEntrega3_Rotkier/sass/estilos.scss */
+/* line 269, ../PreEntrega3_Rotkier/sass/estilos.scss */
 .copyright p {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 10px;
@@ -334,7 +339,7 @@ i {
 /* Fin Footer */
 /* ---------- Media queries Tablet ----------*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 273, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 277, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .links,
   .texto-footer,
   .location,
@@ -346,47 +351,47 @@ i {
 
 /* ---------- Media queries Mobile ----------*/
 @media only screen and (max-width: 768px) {
-  /* line 285, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 289, ../PreEntrega3_Rotkier/sass/estilos.scss */
   body {
     padding-top: 0;
   }
-  /* line 288, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 292, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .navbar-toggler-icon {
     color: white;
   }
-  /* line 292, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 296, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .navbar-brand img {
     height: 90px;
   }
-  /* line 296, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 300, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .navbar-collapse {
     padding-bottom: 40px;
   }
-  /* line 300, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 304, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .sobre-nosotros {
     padding-top: 50px;
     width: 90%;
     margin-top: 0;
   }
-  /* line 304, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 308, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .sobre-nosotros p {
     font-size: 15px;
   }
-  /* line 309, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 313, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .show-mobile {
     display: block;
     text-align: center;
   }
-  /* line 313, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 317, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .show-desktop {
     display: none;
   }
-  /* line 317, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 321, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .fotos-index {
     margin-bottom: 0;
     padding: 0;
   }
-  /* line 322, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 326, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .links,
   .texto-footer,
   .location,
@@ -394,14 +399,14 @@ i {
     text-align: center;
     padding: 10px;
   }
-  /* line 330, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 334, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .links {
     margin: 0 auto;
     width: 90%;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   }
-  /* line 337, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 341, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .location i {
     padding-right: 10px;
   }
@@ -411,7 +416,7 @@ i {
     grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
    }
   */
-  /* line 346, ../PreEntrega3_Rotkier/sass/estilos.scss */
+  /* line 350, ../PreEntrega3_Rotkier/sass/estilos.scss */
   .galeria {
     padding-top: 170px;
   }
