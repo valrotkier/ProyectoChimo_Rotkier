@@ -200,9 +200,12 @@ textarea:focus::placeholder {
 
 .info-alojamiento {
   background-color: $fondo-gris-clarito;
-  h2,
+  h2 {
+    color: $color-principal;
+  }
   h3 {
     color: $color-principal;
+    font-size: 1.45rem;
   }
 }
 
@@ -213,8 +216,8 @@ textarea:focus::placeholder {
   }
 }
 
-.boton-alojamiento {
-  transition: all 0.3s ease-in-out;
+.boton-actividades {
+  transition: all 0.2s ease-in-out;
 }
 
 /* Footer */
