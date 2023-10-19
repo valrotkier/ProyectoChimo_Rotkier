@@ -235,7 +235,7 @@ textarea:focus::placeholder {
   }
 }
 
-.links {
+.links-footer {
   padding: 10px 0 50px 0;
 
   ul > li {
@@ -252,7 +252,7 @@ textarea:focus::placeholder {
   }
 }
 
-.location a {
+.location-footer a {
   color: rgba(255, 255, 255, 0.5);
   transition: color 0.2s;
   &:hover {
@@ -283,12 +283,24 @@ i {
 
 /* ---------- Media queries Tablet ----------*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .links,
+  .links-footer,
   .texto-footer,
-  .location,
+  .location-footer,
   .copyright {
     text-align: center;
     padding: 10px;
+  }
+  .links-footer {
+    margin: 0 auto;
+    width: 90%;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  }
+  .social-links {
+    padding-left: 20px;
+  }
+  .location-footer i {
+    padding: 0;
   }
 }
 
@@ -332,23 +344,25 @@ i {
     padding: 0;
   }
 
-  .links,
+  .links-footer,
   .texto-footer,
-  .location,
+  .location-footer,
   .copyright {
     text-align: center;
     padding: 10px;
   }
 
-  .links {
+  .links-footer {
     margin: 0 auto;
     width: 90%;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   }
-
-  .location i {
-    padding-right: 10px;
+  .location-footer i {
+    padding: 0;
+  }
+  .social-links {
+    padding-left: 20px;
   }
   /* Por si quiero 2 columnas en la Galeria en mobile */
   /* 
