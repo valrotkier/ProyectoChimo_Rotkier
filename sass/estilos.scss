@@ -29,6 +29,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 #navbarNav ul li a {
   color: $color-principal;
   transition: all 0.2s ease-in-out;
@@ -67,11 +72,6 @@ a {
     line-height: 27px;
     padding: 30px 0;
   }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .fotos-index {
@@ -117,6 +117,7 @@ h1 {
 .galeria {
   padding-top: 100px;
 }
+
 /* Nav Bootstrap */
 
 .container-fluid {
@@ -198,6 +199,7 @@ textarea:focus::placeholder {
 }
 /* Fin Formulario */
 
+/* CSS varios de las paginas*/
 .info-alojamiento {
   background-color: $fondo-gris-clarito;
   h2 {
@@ -282,6 +284,7 @@ i {
 /* Fin Footer */
 
 /* ---------- Media queries Tablet ----------*/
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .links-footer,
   .texto-footer,
@@ -364,7 +367,7 @@ i {
   .social-links {
     padding-left: 20px;
   }
-  /* Por si quiero 2 columnas en la Galeria en mobile */
+  /* Por si quiero 2 columnas en la galeria en mobile */
   /* 
   #galeria {
     grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
